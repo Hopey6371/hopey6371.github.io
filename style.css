@@ -1,0 +1,27 @@
+.title {
+    text-align:center;
+}
+
+.row1 {
+    display: flex;
+}
+
+.row1 img {
+    width: 320px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    padding: 20px;
+}
+
+/* default greyscale */
+.card {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+/* when clicked/toggled, remove greyscale */
+.card.collected {
+    filter: grayscale(0%);
+}

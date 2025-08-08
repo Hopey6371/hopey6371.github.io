@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist</title>
+</head>
+<body>
+    <div class="title">
+        <h1> Raichu Card Checklist</h1>
+    </div>
+    <div class = "row1">
+        <img src="first_edition_base.jpg" alt="First Edition Base" class="card" onclick="toggleCard(this)">  
+        <img src="base.jpg" alt="Base" class="card" onclick="toggleCard(this)">
+        <img src="first_edition_fossil.jpg" alt="First Edition Fossil" class="card" onclick="toggleCard(this)">
+    </div>
+
+    <script>
+        function toggleCard(el) {
+            el.classList.toggle("collected");
+        }
+    </script>
+
+</body>
+</html>
